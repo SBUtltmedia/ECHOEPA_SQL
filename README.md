@@ -4,6 +4,7 @@ This is a python script "scrapeECHOEPA" which makes serveral calls to the follow
 * unzipEPA
 * stripNulls
 * chunkFile
+###
 These are all helper scripts which do not need to be run independantly. 
 All of the above require execute permission (chmod u+x <filename>)
 ###
@@ -23,7 +24,7 @@ the script gets the connection info for the currently unused database from eithe
 the directory "middleware" contains a short php script that relies on both currentDBIndex, and either db_a_public.csv or db_b_public.csv
 the user should have select permission only. "middleware" should be moved to somewhere inside the web root of the server, the rest of the project should reside outside of wen root.   
 ###  
-dependies that I recall are python3 php>=5.3 wget and [Parallel](https://www.gnu.org/software/parallel/) used by "chunkFile"
+dependancies that I recall are python3 php>=5.3 wget and [Parallel](https://www.gnu.org/software/parallel/) used by "chunkFile"
 ###
  "schema.sql"  contains the schema for the tables listed in "files.csv" we've mostly changed the type of the columns containing indexes, I'm sure the schema could be improved. 
 "schema.sql" should be loaded into your databases before "scrapeECHOEPA" is used.
