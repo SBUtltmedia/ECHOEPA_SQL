@@ -1,0 +1,4 @@
+#!/bin/bash
+tail -n +2 db_$2_private.csv | sed -n 1'p' | tr ',' ' ' |while read host db user password;do 
+echo --snifflimit 0 --no-create --db mysql+mysqlconnector://$user:$password@$host/$db --insert ./CSV/$1.csv --tables $table;
+done
