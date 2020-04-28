@@ -34,7 +34,7 @@ with open('files.csv', newline='') as csvfile:
 		else:
 			print("File %s  already exists" %(location))
 			os.system("./unzipEPA %s" %(location))
-			os.remove('./zips/%s.csv' %(location))
+			os.remove('./zips/%s' %(location))
 	exit
 	for nulledFile in filesWithNulls:	
 		os.system("./stripNulls %s" %(nulledFile))

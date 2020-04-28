@@ -1,5 +1,8 @@
 db*.csv
+
 db_a_public.csv
 db_b_public.csv
 db_a_private.csv
 db_b_private.csv
+CSV/*
+zips/*
