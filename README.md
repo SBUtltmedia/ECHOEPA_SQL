@@ -12,7 +12,7 @@ wgetEPA will get a zip file from the ECHO EPA website and place it in a director
 ###
 unzipEPA takes a file located in "zips" and extracts it to a directory "CSV"
 ###
-stripNulls strips the nulls from one of the CSVs (CASE_ENFORCEMENTS) which would casue panda's to_sql to fail otherwise
+stripNulls strips the nulls from one of the CSVs (CASE_ENFORCEMENTS) which would cause panda's to_sql to fail otherwise
 ###
 chunkFile takes the larger csv file and creates multiple smaller csv file for correct import using panda's to_sql
 ###
@@ -27,7 +27,7 @@ the user should have select permission only. "middleware" should be moved to som
 dependancies that I recall are python3 php>=5.3 wget and [Parallel](https://www.gnu.org/software/parallel/) used by "chunkFile"
 ###
  "schema.sql"  contains the schema for the tables listed in "files.csv" we've mostly changed the type of the columns containing indexes, I'm sure the schema could be improved. 
-"schema.sql" should be loaded into your databases before "scrapeECHOEPA" is used.
+"schema.sql" should be loaded into your databases before "scrapeECHOEPA" is run.
  
 
 
