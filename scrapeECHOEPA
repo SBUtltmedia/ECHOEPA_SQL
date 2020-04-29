@@ -62,5 +62,6 @@ with open('files.csv', newline='') as csvfile:
 			#os.system("./csvsqlEPA %s %s" %(fileStem,table))
 		#os.system("./csvsqlLargeEPA %s" %(table))
 with open('currentDBIndex', 'w') as writer: 
-	writer.write(currentDBIndex)
+	writer.write(str(currentDBIndex))
+
 
