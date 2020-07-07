@@ -8,9 +8,9 @@ import glob
 from sqlalchemy import create_engine
 os.chdir(os.path.dirname(sys.argv[0]))
 LARGE_TABLES=True
-SMALL_TABLES=False
+SMALL_TABLES=True
 DOWNLOAD_ZIP=True
-DOWNLOAD=False
+DOWNLOAD=True 
 dbPostfixes=['a','b']
 #dbTypes=['mysql+mysqlconnector','postgres']
 dbTypes=['mysql+mysqlconnector','mysql+mysqlconnector']
